@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  vupico-dev:
+    image: vupico-frontend
+    ports:
+      - '3000:3000'
+    volumes:
+      - '../config/dev-config.json:/app/config/config.json'

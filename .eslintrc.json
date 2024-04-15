@@ -1,0 +1,10 @@
+{
+  "extends": ["next/core-web-vitals", "standard", "plugin:react/recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "react"],
+  "rules": {
+    "quotes": ["error", "single"],
+    "no-undef": "error",
+    "no-unused-vars": "error"
+  }
+}

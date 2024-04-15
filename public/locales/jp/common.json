@@ -1,0 +1,11 @@
+{
+    "page.login.title": "サインイン",
+    "page.login.subTitle": "VUPICO アカウントで",
+    "page.login.usernameInput": "ユーザー名",
+    "page.login.passwordInput": "パスワード",
+    "page.login.signInButton": "サインイン",
+    "page.login.requiredUsername": "ユーザー名は必須です",
+    "page.login.requiredPassword": "パスワードが必要",
+    "page.login.invalidUsername": "無効なユーザー名",
+    "page.login.invalidPassword": "無効なパスワード"
+}

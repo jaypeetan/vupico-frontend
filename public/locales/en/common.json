@@ -1,0 +1,11 @@
+{
+    "page.login.title": "Sign In",
+    "page.login.subTitle": "with your VUPICO account",
+    "page.login.usernameInput": "Username",
+    "page.login.passwordInput": "Password",
+    "page.login.signInButton": "Sign In",
+    "page.login.requiredUsername": "Username is required",
+    "page.login.requiredPassword": "Password is required",
+    "page.login.invalidUsername": "Invalid Username",
+    "page.login.invalidPassword": "Invalid  Password"
+}
