@@ -1,5 +1,9 @@
-import { getConfig } from "@/core/config";
 export async function GET() {
-  const config = await getConfig()
-  return Response.json(config);
+  const filteredData = Object.entries(process.env)
+    .filter(([key, value]) => key.startsWith('SDP_PUBLIC'))
+    .reduce((accumulator: any, [key, value]) => {
+      accumulator[key] = value;
+      return accumulator;
+    }, {});
+  return Response.json(filteredData);
 }

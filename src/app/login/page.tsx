@@ -9,13 +9,12 @@ import {
   Button,
   Typography,
 } from '@material-tailwind/react';
-import useConfig from '../hooks/useConfig';
+import { getEnv } from '@/core/utils/env';
 
 function LoginPage() {
-  const { getConfig } = useConfig();
   useEffect(() => {
     const asyncFunction = async () => {
-      const data = await getConfig();
+      const data = await getEnv(false);
       console.log('config: ', data);
     };
     asyncFunction();

@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import useConfig from './hooks/useConfig';
 import {
   ThemeProvider,
   Typography,
@@ -16,15 +15,15 @@ import {
   MenuList,
   MenuItem,
 } from '@material-tailwind/react';
+import { getEnv } from '@/core/utils/env';
 
 export default function Home() {
   const [open, setOpen] = useState(false);
-  const { getConfig } = useConfig();
   const [envVar, setEnvVar] = useState<Record<string, any>>();
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await getConfig();
+      const response = await getEnv(false);
       setEnvVar(response);
     };
     fetchData();

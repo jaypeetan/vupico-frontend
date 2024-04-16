@@ -6,4 +6,4 @@ services:
     ports:
       - '3000:3000'
     volumes:
-      - './config/config.json:/app/config/config.json'
+      - '.env.production:/app/.env.production'
